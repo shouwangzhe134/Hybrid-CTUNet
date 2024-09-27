@@ -17,24 +17,24 @@ Medical segmentation is a fundamental problem in medical image computing, and it
 ### Installation Procedure
 
 a. Create a conda virtual environment and activate it.
-'''shell
+```shell
 conda create -n hybrid-CTUNet python=3.9.18 -y
 conda activate hybrid-CTUNet 
-'''
+```
 
 b. To avoid the problem that could not load library libcudnn_cnn_infer.so.8. Error, install the corresponding cuda version in the conda environment.
-'''shell
+```shell
 conda install nvidia/label/cuda-11.3.0::cuda
-'''
+```
 
 c. Install torch.
-'''shell
+```shell
 pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
-'''
+```
 or
-'''shell
+```shell
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
-'''
+```
 
 d. Install MONAI and the recommended dependencies.
 '''shell
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 pip install 'monai[all]'
 
 e. Reconfirm some python package versions. 
-'''shell
+```shell
 pip uninstall protobuf
 pip install protobuf==3.20.0
 
@@ -50,7 +50,7 @@ pip install scipy==1.11.1
 
 pip install numpy==1.22.4
 pip install medpy==0.4.0 
-'''
+```
 
 ## Train and Inference 
 
