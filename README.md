@@ -79,6 +79,9 @@ CUDA_VISIBLE_DEVICES=4 python test_C_TUNet.py --pretrained_dir='./runs/TUNet_pf8
 CUDA_VISIBLE_DEVICES=4 python test_CTUNet.py --pretrained_dir='./runs/CTUNet_ds8/' --model_name="ctunet" --model_depths=101 --patch_frame=8 --exp_name="CTUNet_ds8"
 ```
 
+## Acknowledgement
+Many thanks to the open source codes, i.e., [MONAI](https://github.com/Project-MONAI/research-contributions)
+
 #### Tensorboard
 
 ```shell
