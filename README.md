@@ -22,7 +22,7 @@ conda create -n hybrid-CTUNet python=3.9.18 -y
 conda activate hybrid-CTUNet 
 ```
 
-b. To avoid the problem that could not load library libcudnn_cnn_infer.so.8. Error, install the corresponding cuda version in the conda environment.
+b. To avoid the problem that could not load library libcudnn_cnn_infer.so.8. Error, install the corresponding cuda version in the conda environment. (optional)
 ```shell
 conda install nvidia/label/cuda-11.3.0::cuda
 ```
