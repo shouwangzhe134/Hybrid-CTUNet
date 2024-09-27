@@ -87,4 +87,4 @@ tensorboard --logdir="" --bind_all --port=6007
 ```
 
 ## Acknowledgement
-Many thanks to the open source codes, i.e., [MONAI](https://github.com/Project-MONAI/research-contributions)
+Many thanks to the open source codes, i.e., [MONAI](https://github.com/Project-MONAI/research-contributions).
