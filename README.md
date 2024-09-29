@@ -1,7 +1,7 @@
 # Hybrid-CTUNet
 
 - This code is an official implementation of "Hybrid-CTUNet: A Double Complementation Approach for 3D Medical Image Segmentation" based on the open source medical segmentation toolbox [MONAI](https://github.com/Project-MONAI/research-contributions/tree/main).
-- 
+
 ## Introduction
 Medical segmentation is a fundamental problem in medical image computing, and it finds wide application in clinical domains such as medical diagnosis and robotic surgery. In this work, we investigate the distinct spatial characteristics of CNNs and Transformers in their representations of local and global features, while also analyzing the differences in preservation of spatial position within their network structures. They provide a comprehensive explanation of the comple-mentarity between CNN and Transformer. To promote effective complementarity, we propose two novel architectures, namely CUNet and TUNet, which individu-ally preserve the spatial characteristics throughout the overall U-Net process of the encoder and decoder. For feature complementation, we incorporate CUNet and TUNet as parallel branches, named CTUNet, which enhances the long-range dependencies of global information in both the deep and shallow locality. More-over, we design the binary cross-weights for element-wise addition to achieve a more prominent fusion of features with diverse spatial characteristics. For further mask complementation, we construct a Hybrid-CTUNet by integrating the jointly training CTUNet and the independently training TUNet. Extensive empirical analysis conducted on medical datasets confirms the superiority of our proposed method compared to state-of-the-art models.
 
